@@ -1,0 +1,10 @@
+heat_template_version: 2015-04-30
+
+description: Simple template to deploy a single compute instance
+
+resources:
+  my_instance:
+    type: OS::Nova::Server
+    properties:
+      image: Fedora-Cloud-Base-20141203-21.x86_64
+      flavor: m1.nano
